@@ -1,130 +1,138 @@
 /* === Reset some browser defaults === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* === Base body styles === */
-  body {
-    background-color: #f9f9f9;
-    color: #333;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  .nav-link {
-    color:white;
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .nav-link:hover{
-    text-decoration: underline;
-  }
-  
-  /* === Headings === */
-  h1 {
-    font-size: 36px;
-    color: #cc0000;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    color: #cc0000;
-    margin-top: 30px;
-    margin-bottom: 15px;
-  }
-  
-  /* === Paragraphs === */
-  .para {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  /* === Navigation Bar === */
-  #navbar {
-    background-color: #f90909;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  nav a {
-    color: white;
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* === Tables === */
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  th {
-    background-color: #cc0000;
-    color: white;
-  }
-  
-  /* === Form Styles === */
-  form {
-    background-color: #fff;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    max-width: 600px;
-    margin-top: 20px;
-  }
-  
-  label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input, select, textarea {
-    font-size: 16px;
-    padding: 8px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  .btn{
-    background-color: #cc0000;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #a10000;
-  }
-  .section{
-    padding:20px;
-    margin-bottom: 40px;
-    background-color: #fdfdfd;
-   box-shadow: 0 0 5px rgba(0,0,0,0.05);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Base body styles === */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* === Navigation Bar === */
+#navbar {
+  background-color: #f90909;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* === Headings === */
+h1 {
+  font-size: 36px;
+  color: #cc0000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #cc0000;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* === Paragraphs === */
+.para {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* === Section Layouts === */
+.section {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #fdfdfd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* === Tables === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #cc0000;
+  color: white;
+}
+
+/* === Form Styles === */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-size: 16px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* === Buttons === */
+.btn {
+  background-color: #cc0000;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a10000;
+}
