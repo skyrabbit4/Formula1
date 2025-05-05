@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Fan Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="https://www.formula1.com/" target="_blank">F1 Website</a> |
+    <a href="#Drivers">Top Drivers</a> |
+    <a href="#Teams">Teams</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+ <!-- Site Header -->
+ <header>
+  <h1>Welcome to F1 du du du MAX Verstappen</h1>
+</header>
+  <!-- Main Content -->
+  <main>
+
+    <!-- Intro Section -->
+    <section id="intro">
+      <img src="https://cdn-2.motorsport.com/images/mgl/6n9RnBeY/s1200/red-bull-racing-rb18-1.webp"
+           alt="Red Bull Racing Car" width="500" height="300" />
+
+      <p>Formula 1 is the highest class of single-seater auto racing, sanctioned by the Fédération Internationale de l'Automobile (FIA).
+      The F1 World Championship has been one of the premier forms of racing around the world since its inaugural season in 1950.</p>
+
+      <p>Formula 1 cars are the fastest regulated road-course racing cars in the world, owing to their extreme cornering speeds.
+      The combination of high speeds, low weight, and high downforce allows F1 cars to achieve lateral acceleration of over 5g in corners.</p>
+
+      <p>Formula 1 is a sport that requires a combination of skill, precision, and teamwork. Drivers must be able to handle the physical
+      and mental demands of racing at high speeds, while also working closely with their teams to develop and optimize their cars.</p>
+
+      <p>In addition to the technical aspects, Formula 1 is also known for its glamorous lifestyle and high-profile events.</p>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights">
+      <h2>Highlights</h2>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/FPSphJ6X0_Q"
+        title="F1 Highlights"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <!-- Favorite Driver -->
+    <section>
+      <h2>My Favorite Driver</h2>
+      <p><strong>Max Verstappen</strong> is a world <em>champion</em>. He is just a smooth rider.</p>
+    </section>
+
+    <!-- Top Drivers -->
+    <section id="Drivers">
+      <h2>Top 5 Drivers</h2>
+      <ul>
+        <li>Max Verstappen</li>
+        <li>Lewis Hamilton</li>
+        <li>Sebastian Vettel</li>
+        <li>Michael Schumacher</li>
+        <li>Daniel Ricciardo</li>
+      </ul>
+    </section>
+
+    <!-- Top Teams -->
+    <section id="Teams">
+      <h2>Top 5 Teams</h2>
+      <ol>
+        <li>Red Bull Racing</li>
+        <li>Mercedes</li>
+        <li>Ferrari</li>
+        <li>McLaren</li>
+        <li>Alpine</li>
+      </ol>
+    </section>
+
+    <!-- Driver Standings Table -->
+    <section>
+      <h2>2024 Driver Standings</h2>
+      <table border="1">
+        <caption>2024 F1 Driver Standings</caption>
+        <tr>
+          <th>Position</th>
+          <th>Driver</th>
+          <th>Team</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Max Verstappen</td>
+          <td>Red Bull Racing</td>
+          <td>413</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Lewis Hamilton</td>
+          <td>Mercedes</td>
+          <td>275</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Max vs Lewis Comparison -->
+    <section>
+      <h2>Lewis vs Max</h2>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Wins</th>
+          <th>Poles</th>
+        </tr>
+        <tr>
+          <td>Max Verstappen</td>
+          <td>23</td>
+          <td>39</td>
+        </tr>
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>26</td>
+          <td>45</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Gender -->
+        <label for="Gender">Gender:</label><br>
+        <input type="text" id="Gender" name="Gender"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!-- Fan Category -->
+        <label for="category">Fan Category:</label><br>
+        <select id="category" name="category">
+          <option value="student">Student</option>
+          <option value="engineer">Engineer</option>
+          <option value="fan">F1 Fan</option>
+        </select><br><br>
+
+        <!-- Favorite Driver -->
+        <label for="FavoriteDriver">Favorite Driver:</label><br>
+        <select name="FavoriteDriver" id="FavoriteDriver">
+          <option value="Max">Max Verstappen</option>
+          <option value="Lewis">Lewis Hamilton</option>
+          <option value="Sebastian">Sebastian Vettel</option>
+          <option value="Michael">Michael Schumacher</option>
+          <option value="Daniel">Daniel Ricciardo</option>
+        </select><br><br>
+        
+        <!-- Newsletter -->
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to F1 Newsletter</label><br><br>
+
+        <!-- Message -->
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Shubham Kaushik | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
