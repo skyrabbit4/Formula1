@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - F1 Fan Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <a class="nav-link" href="index.html">Home</a> |
+    <a class="nav-link" href="https://www.formula1.com/" target="_blank">F1</a>
+  </nav>
+
+  <header>
+    <h1>Contact Me</h1>
+  </header>
+
+  <main>
+    <section id="contact">
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="Gender">Gender:</label><br>
+        <input type="text" id="Gender" name="Gender"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="category">Fan Category:</label><br>
+        <select id="category" name="category">
+          <option value="student">Student</option>
+          <option value="engineer">Engineer</option>
+          <option value="fan">F1 Fan</option>
+        </select><br><br>
+
+        <label for="FavoriteDriver">Favorite Driver:</label><br>
+        <select name="FavoriteDriver" id="FavoriteDriver">
+          <option value="Max">Max Verstappen</option>
+          <option value="Lewis">Lewis Hamilton</option>
+          <option value="Sebastian">Sebastian Vettel</option>
+          <option value="Michael">Michael Schumacher</option>
+          <option value="Daniel">Daniel Ricciardo</option>
+        </select><br><br>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          <label for="subscribe">Subscribe to F1 Newsletter</label><br><br>
+        </div>
+
+        <div class="checkbox-group">
+          <label for="message">Your Message:</label><br>
+          <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Shubham Kaushik | All rights reserved</p>
+  </footer>
+</body>
+</html>
