@@ -25,7 +25,7 @@
     <!-- Intro Section -->
     <section class="intro">
       <img src="https://cdn-2.motorsport.com/images/mgl/6n9RnBeY/s1200/red-bull-racing-rb18-1.webp"
-           alt="Red Bull Racing Car" width="500" height="300" />
+           alt="Red Bull Racing RB18 Formula 1 car in action on race track" width="500" height="300" loading="lazy" />
 
       <p class="para">Formula 1 is the highest class of single-seater auto racing, sanctioned by the Fédération Internationale de l'Automobile (FIA).
       The F1 World Championship has been one of the premier forms of racing around the world since its inaugural season in 1950.</p>
@@ -82,7 +82,7 @@
     </section>
 
     <!-- Driver Standings Table -->
-    <section id="Drivers" class="section">
+    <section id="standings" class="section">
       <h2>2024 Driver Standings</h2>
       <table border="1">
         <caption>2024 F1 Driver Standings</caption>
@@ -132,10 +132,11 @@
     <!-- Contact Form -->
     <section id="contact">
       <h2>Contact Me</h2>
-      <form>
+      <form action="#" method="POST" novalidate>
         <!-- Name -->
         <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required aria-describedby="name-help"><br>
+        <small id="name-help">Please enter your full name</small><br>
 
         <!-- Gender -->
         <label for="Gender">Gender:</label><br>
@@ -143,11 +144,13 @@
 
         <!-- Email -->
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required aria-describedby="email-help"><br>
+        <small id="email-help">We'll never share your email</small><br>
         
         <!-- Fan Category -->
         <label for="category">Fan Category:</label><br>
-        <select id="category" name="category">
+        <select id="category" name="category" required>
+          <option value="">Select a category</option>
           <option value="student">Student</option>
           <option value="engineer">Engineer</option>
           <option value="fan">F1 Fan</option>
@@ -155,7 +158,8 @@
 
         <!-- Favorite Driver -->
         <label for="FavoriteDriver">Favorite Driver:</label><br>
-        <select name="FavoriteDriver" id="FavoriteDriver">
+        <select name="FavoriteDriver" id="FavoriteDriver" required>
+          <option value="">Select a driver</option>
           <option value="Max">Max Verstappen</option>
           <option value="Lewis">Lewis Hamilton</option>
           <option value="Sebastian">Sebastian Vettel</option>
@@ -165,14 +169,14 @@
         
         <!-- Newsletter -->
         <div class="checkbox-group">
-        <input type="checkbox" id="subscribe" name="subscribe">
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
         <label for="subscribe">Subscribe to F1 Newsletter</label><br><br>
       </div>
 
         <!-- Message -->
         <div class="checkbox-group">
         <label for="message">Your Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Tell us about your F1 passion..."></textarea><br><br>
         </div>
 
         <!-- Submit -->
