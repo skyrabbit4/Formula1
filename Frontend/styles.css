@@ -260,13 +260,13 @@ footer {
   float:left;
   border-radius:8px;
   padding: 20px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 .driver-card img {
   width: 100%;
-  height:150px;
+  height:100px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 10px;
